@@ -1,0 +1,70 @@
+html, body {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p[style] {
+    color:rgb(30, 28, 28);
+}
+
+
+.banner {
+    text-align: center;
+    height: 64px;
+    padding: 4px;
+    margin-left: 0;
+    font-size: 32px;
+    font-style: oblique;
+
+}
+
+.menu {
+    text-align: justify;
+    cursor: pointer;
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    list-style: none;
+ 
+    margin: 0%;
+    padding: 0;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.menu li a:hover {
+    color: black;
+    border: 1px solid rgb(52, 2, 75);
+    border-radius: 4px;
+    background-color: rgb(221, 230, 230);
+}
+
+.menu li a:visited {
+    color: inherit;
+}
+
+#main-heading {
+    display: block;
+    text-align: center;
+}
+
+#task p {
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+    
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
