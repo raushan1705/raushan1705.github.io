@@ -16,7 +16,8 @@ p[style] {
     margin-left: 0;
     font-size: 32px;
     font-style: oblique;
-
+    color: aliceblue;
+    background-image: url(https://get.pxhere.com/photo/horizon-mountain-snow-cloud-sky-dawn-mountain-range-panorama-dusk-clear-snowcap-alps-plateau-mountainous-landforms-59853.jpg);
 }
 
 .menu {
