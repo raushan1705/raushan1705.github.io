@@ -1,48 +1,75 @@
+@media (min-width: 300px) {
+
 html, body {
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background:rgb(218, 222, 232);
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2em;
+    margin-right: 2em;
+}    
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
 }
 
 p[style] {
     color:rgb(30, 28, 28);
 }
 
-
 .banner {
+    position: absolute;
+    height: 30vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: 100%;
     text-align: center;
-    height: 64px;
-    padding: 4px;
-    margin-left: 0;
-    font-size: 32px;
+    font-size: 3vw;
     font-style: oblique;
-    color: aliceblue;
-    background-image: url(https://get.pxhere.com/photo/horizon-mountain-snow-cloud-sky-dawn-mountain-range-panorama-dusk-clear-snowcap-alps-plateau-mountainous-landforms-59853.jpg);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    color: rgb(87, 38, 38);
+    background-image: url(https://i.pinimg.com/originals/f8/38/f0/f838f04ddd9cb2690db091ca3b276ca1.jpg);
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24em;
 }
 
 .menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.5em;
+    padding: 0.5em;
     text-align: justify;
     cursor: pointer;
-    position: relative;
     list-style-type: none;
-    display: flex;
-    list-style: none;
- 
-    margin: 0%;
     padding: 0;
+    margin-bottom: 4em;
 }
 
 .menu li a {
     display: block;
     text-decoration: none;
-    padding: 10px;
-    margin-left: 100px;
+    padding: 0.2em;
+    margin-left: 4em;
+    text-align: center;
 }
 
 .menu li a:hover {
     color: black;
-    border: 1px solid rgb(52, 2, 75);
-    border-radius: 4px;
+    border: 0.05em solid rgb(52, 2, 75);
+    border-radius: 0.5em;
     background-color: rgb(221, 230, 230);
 }
 
@@ -59,13 +86,72 @@ p[style] {
     padding: 0%;
     margin: 0%;
     text-align: left;
-    
 }
 
-.logo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    text-align: center;
+#task img {
+    max-width: 100%;
+    height: auto;
 }
 
+#submission img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5em;   
+}
+
+/* phone */
+@media only screen and (max-width: 768px){
+    .banner {
+        font-size: 2em;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul.menu li{
+        width: auto;
+        float: left;
+        padding: 0.5em;
+        margin: 1em;
+    }
+
+    body {
+        width: 100%;
+        margin-right: 2em;
+    }
+
+    .main_content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5em;   
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 1024px){
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul.menu li{
+        width: auto;
+        float: left;
+        padding: 0.5em;
+        margin: 1em;
+    }
+
+    body {
+        width: 100%;
+        margin-right: 2em;
+    }
+}
+
+}
